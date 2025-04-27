@@ -4,7 +4,7 @@ footer {
     align-items: center; 
     padding: 0 2rem; 
     padding: 0.5rem 1rem;
-    background: rgb(2, 4, 150);
+    background: blue;
   }
 footer h3 {
     color: white;

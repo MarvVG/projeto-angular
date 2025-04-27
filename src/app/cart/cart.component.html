@@ -2,13 +2,13 @@
     <h2>Meu carrinho</h2>
     @for(product of cartProducts; track product.id) {
         <div class="cart-item">
-        <img [src]="imagePath(product.id)" alt="{{ product.name }}">
+        <img [src]="imagePath(product.id)" alt="{{ product.name }}" class="img-product">
         
         <div class="cart-details">
             <div class="cart-header">
             <h3>{{ product.name }}</h3>
             <button (click)="removeFromCart(product.id)" class="delete-button">
-                🗑️
+                <img src="assets/bin.png" alt="Trash" class="img-trash">
             </button>
             </div>
             <p class="description">{{product.description}}</p>

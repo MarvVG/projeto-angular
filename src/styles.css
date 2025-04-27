@@ -2,15 +2,22 @@
   box-sizing: border-box;
 }
 
-html {
+html,body {
   height: 100%;
 }
-
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 body {
   font-family: "Poppins", sans-serif;
-  background: rgb(255, 255, 255);
+  background: white;
   color: #c3b3d8;
   margin: 0;
   padding: 0;
   height: 100%;
+}
+.router-container{
+  height: 120vh;
 }

@@ -5,8 +5,8 @@
   background-color: #74748d;
   border-radius: 1rem;
   padding: 1rem;
-  width: 220px;
-  min-height: 320px;
+  width: 240px;
+  min-height: 350px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease;
 }
@@ -26,9 +26,9 @@
 }
 
 .product-button img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 5%;
   object-fit: cover;
   margin-bottom: 0.5rem;
 }
@@ -42,10 +42,10 @@
 }
 
 .product-price {
-  color: #4caf50;
+  color: rgb(0, 255, 0);
   font-size: 1.1rem;
   font-weight: bold;
-  margin-bottom: auto;
+  margin-bottom: 1rem;
 }
 
 .product-description {
