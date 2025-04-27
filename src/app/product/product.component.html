@@ -1,0 +1,13 @@
+<app-card>
+  <div class="card">
+    <button [class.active]="selected" (click)="onSelectProductToDesc()" class="product-button">
+      <img [src]="imagePath" [alt]="product.avatar" />
+      <span class="product-name">{{ product.name }}</span>
+      <p class="product-price" [ngClass]="{'promotion-text': product.onsale}" >{{ product.price  | currency: 'BRL'}}</p>
+    </button>
+    <button (click)="onSelectProduct()" class="add-to-cart">
+      <img src="assets/shopping-cart.png" alt="Carrinho" class="cart-icon" />
+      Comprar
+    </button>
+  </div>
+</app-card>

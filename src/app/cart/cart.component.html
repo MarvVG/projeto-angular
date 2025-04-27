@@ -1,0 +1,24 @@
+<section class="cart-container">
+    <h2>Meu carrinho</h2>
+    @for(product of cartProducts; track product.id) {
+        <div class="cart-item">
+        <img [src]="imagePath(product.id)" alt="{{ product.name }}">
+        
+        <div class="cart-details">
+            <div class="cart-header">
+            <h3>{{ product.name }}</h3>
+            <button (click)="removeFromCart(product.id)" class="delete-button">
+                🗑️
+            </button>
+            </div>
+            <p class="description">{{product.description}}</p>
+            <p class="price"><strong>R$ {{ product.price }}</strong></p>
+        </div>
+    </div>
+    }
+    <div class="cart-summary">
+        <p>Total: <strong>R$ {{ totalPrice }}</strong></p>
+        <button class="checkout-button">Finalizar Compra</button>
+    </div>
+</section>
+  

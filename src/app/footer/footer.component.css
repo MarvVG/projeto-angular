@@ -1,0 +1,12 @@
+footer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 0 2rem; 
+    padding: 0.5rem 1rem;
+    background: rgb(2, 4, 150);
+  }
+footer h3 {
+    color: white;
+    font-size: 1.0rem;
+}

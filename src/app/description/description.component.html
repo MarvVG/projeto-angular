@@ -1,0 +1,24 @@
+<div class="product-details">
+    @if (product.id !== '') {
+      <h2>Detalhes do produto</h2>
+  
+      <div class="product-card">
+        <img [src]="imagePath" alt="{{ product.name }}" class="product-image" />
+    
+        <div class="product-info">
+          <h3>{{ product.name }}</h3>
+          <p class="price">R$ {{ product.price }}</p>
+    
+          <div class="description">
+            <strong>Descrição:</strong>
+            <p>{{ product.description }}</p>
+          </div>
+    
+          <button class="add-to-cart">
+            Adicionar ao carrinho<img src="assets/white-card.png" alt="Carrinho de compras">
+          </button>
+        </div>
+      </div>
+    }
+  </div>
+  

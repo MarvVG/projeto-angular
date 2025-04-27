@@ -1,0 +1,10 @@
+<main>
+    <ul id="product">
+        <li *ngIf="products.length === 0">Não há produtos disponíveis</li>
+        @for(product of products; track product.id) {
+            <li>
+                <app-product [product]="product" [selected]="product.id === selectedProductId" />
+            </li>
+        }
+    </ul>
+</main>
